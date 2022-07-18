@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+body {
+  max-width: 1600px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #f7f8fa;
+}
+
+header {
+  position: relative;
+  max-width: 1440px;
+  background-image: url("Pictures/truck1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 837px;
+  margin: 0 auto;
+  color: #005eac;
+}
+
+header .overlay {
+  position: absolute;
+  height: 805px;
+  width: 1440px;
+  background-color: #005eac;
+  opacity: 0.27;
+  mix-blend-mode: color;
+}
+
+.main-nav {
+  position: relative;
+  font-weight: 600;
+  margin: 20px auto;
+  max-width: 1024px;
+}
+
+.main-nav .logo {
+  display: inline;
+}
+
+.main-nav .logo img {
+  width: 108.88px;
+  height: auto;
+  position: absolute;
+  top: 7.93px;
+  left: 37.12px;
+}
+
+.nav-list {
+  display: inline-block;
+  position: absolute;
+  left: 400px;
+}
+
+.nav-list .home:active {
+  border-bottom: solid 2px #005aa5;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #1b1a19;
+  font-size: 16px;
+}
+
+.nav-list li a:hover {
+  border-bottom: solid 2px #005aa5;
+}
+
+.main-nav .buttons {
+  display: inline-block;
+  position: absolute;
+  left: 800px;
+  top: 11px;
+}
+
+.main-nav .buttons span {
+  margin: 0 10px;
+}
+
+.main-nav .buttons a {
+  text-decoration: none;
+  color: #1b1a19;
+  font-size: 16px;
+}
+
+.main-nav .buttons .signup {
+  background-color: #005aa5;
+  border-radius: 3rem;
+  padding: 10px 30px;
+}
+
+.main-nav .buttons .signup a {
+  color: #fff;
+  text-align: center;
+}
+
+.intro-text {
+  position: absolute;
+  left: 250px;
+  top: 265px;
+}
+
+.intro-text .heading {
+  font-size: 37px;
+  line-height: 135%;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.intro-text span {
+  color: #1b1a19;
+}
+
+.intro-text .solutions {
+  color: #1b1a19;
+  font-size: 16px;
+  line-height: 133%;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.intro-text .search-box {
+  margin-top: 30px;
+}
+
+.intro-text .search-box input {
+  padding-left: 25px;
+  width: 275px;
+  height: 50px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 16px;
+  border: none;
+}
+
+.intro-text .search-box label {
+  background: #005aa5;
+  padding: 12px 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 150px;
+  height: 150px;
+  margin-left: -3px;
+  text-align: center;
+}
+
+.intro-text .search-box label a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.call {
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0px 29px 40px -15px rgba(54, 97, 132, 0.19);
+  top: 740px;
+  left: 990px;
+  border-radius: 16px;
+  width: 400px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.call .line img {
+  height: 65px;
+}
+
+.call .tel {
+  color: #005aa5;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#services {
+  background: #f7f8fa;
+  margin-bottom: 80px;
+}
+
+#services .services-content {
+  margin-top: 60px;
+  margin-left: 250px;
+}
+
+#services .services-content h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #005aa5;
+}
+
+#services .services-content h1 {
+  font-size: 32px;
+  line-height: 1.2em;
+}
+
+#services .services-content p {
+  line-height: 1.2em;
+  margin-top: 20px;
+  font-weight: 400;
+  color: #231f20;
+}
+
+#services .services-boxes {
+  margin-top: 50px;
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+}
+
+#services .services-boxes .box1,
+#services .services-boxes .box2,
+#services .services-boxes .box3 {
+  margin-right: 50px;
+  width: 325px;
+  border: 1px solid rgba(181, 195, 207, 0.48);
+  border-radius: 16px;
+  padding: 50px;
+}
+
+#services .services-boxes .box2 {
+  background: #fff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 20px 53px -1px rgba(54, 97, 132, 0.13);
+  border: none;
+}
+
+#services .services-boxes h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#services .services-boxes p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.96px;
+}
+
+#rates {
+  background: #e6eff6;
+  padding: 50px 0;
+}
+
+#rates .rates-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 250px;
+}
+
+#rates .rates-text {
+  margin-top: 40px;
+}
+
+#rates .rates-text h1 {
+  line-height: 125%;
+  font-size: 32px;
+}
+
+#rates .rates-text p {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#rates .rates-text input {
+  padding-left: 15px;
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #98a2b3;
+  font-weight: 400;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#rates .rates-text button {
+  background: #005aa5;
+  display: block;
+  border: none;
+  padding: 12px 28px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+#rates .rates-text button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 600;
+}
+
+#rates .rates-images {
+  margin-right: 100px;
+}
+
+#coming-soon {
+  padding: 60px 0;
+  background: #f7f8fa;
+}
+
+#coming-soon .coming-soonBoxes {
+  display: flex;
+}
+
+#coming-soon .coming-soon1 {
+  margin-left: 250px;
+  width: 400px;
+  margin-top: 120px;
+}
+
+#coming-soon .coming-soon1 h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #005aa5;
+}
+
+#coming-soon .coming-soon1 p {
+  margin-top: 15px;
+}
+
+#coming-soon .coming-soon2 {
+  margin-left: 190px;
+  margin-top: 50px;
+  width: 500px;
+}
+
+#coming-soon .coming-soon2 span {
+  margin-top: 40px;
+}
+
+#coming-soon .coming-soon2 span h5 {
+  display: inline;
+  color: #1b1a19;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#coming-soon .coming-soon2 span img {
+  float: right;
+}
+
+#coming-soon .coming-soon2 p {
+  color: #231f20;
+  line-height: 125%;
+}
+
+#coming-soon .coming-soon2 input {
+  font-family: "Baloo Bhai 2", cursive;
+  border: none;
+  background: none;
+  border-bottom: #d8e0e7 solid 2px;
+  width: 500px;
+  margin: 5px 0 15px 0;
+}
+
+#coming-soon .coming-soon2 input:focus {
+  border: none;
+  background: none;
+  border-bottom: #d8e0e7 solid 2px;
+}
+
+#coming-soon .coming-soon2 button {
+  background: #005aa5;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+#coming-soon .coming-soon2 button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#Get-touch {
+  background: #f7f8fa;
+  margin-top: 50px;
+}
+
+#Get-touch .get-touchContent {
+  display: flex;
+}
+
+#Get-touch .get-touchText {
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+#Get-touch .get-touchText h1 {
+  color: #005aa5;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+#Get-touch .get-touchText p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#Get-touch .get-touchText span label {
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 140px;
+}
+
+#Get-touch .get-touchText span input {
+  font-family: "Baloo Bhai 2", cursive;
+  margin-right: 25px;
+  font-size: 16px;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#Get-touch .get-touchText div span {
+  display: inline;
+}
+
+#Get-touch .message {
+  margin-top: 20px;
+}
+
+#Get-touch .message textarea {
+  border: 1px solid #e4e7ec;
+  padding-left: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+#Get-touch .get-touchText button {
+  background: #005aa5;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+}
+
+#Get-touch .get-touchText button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#Get-touch .get-touchImg {
+  margin-left: 150px;
+  margin-bottom: -8px;
+}
+
+#footer {
+  background: #fff;
+  padding: 70px 0 20px 0;
+  display: flex;
+}
+
+#footer .logo {
+  width: 400px;
+  margin-left: 200px;
+}
+
+#footer .logo .socicons {
+  margin-top: 30px;
+}
+
+#footer .logo .socicons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#footer .company {
+  margin-left: 100px;
+}
+
+#footer .company p,
+#footer .quick-link p,
+#footer .contact p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#footer .company ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#footer .company ul li a {
+  text-decoration: none;
+  color: #1b1a19;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#footer .company ul li a:hover {
+  font-weight: 600;
+}
+
+#footer .quick-link {
+  margin-left: 120px;
+}
+
+#footer .quick-link ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 0 20px 0 0;
+}
+
+#footer .quick-link ul li a {
+  text-decoration: none;
+  color: #1b1a19;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#footer .quick-link ul li a:hover {
+  font-weight: 600;
+}
+
+#footer .contact {
+  margin-left: 110px;
+}
+
+#footer .contact ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+footer {
+  color: #005aa5;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  padding: 10px 0 50px 0;
+}
