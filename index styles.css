@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1600px;
 }
 
 .wrapper {
@@ -18,21 +18,27 @@ body {
 header {
   position: relative;
   max-width: 1440px;
-  background-image: url("Pictures/truck1.png");
+  background-image: url("Pictures/truck1440px.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 837px;
   margin: 0 auto;
-  color: #005eac;
+  opacity: 0.8;
+  z-index: 0;
 }
 
 header .overlay {
   position: absolute;
-  height: 805px;
+  height: 785px;
   width: 1440px;
   background-color: #005eac;
   opacity: 0.27;
   mix-blend-mode: color;
+  z-index: -1;
+}
+
+header .overlay img {
+  display: none;
 }
 
 .main-nav {
@@ -46,8 +52,18 @@ header .overlay {
   display: inline;
 }
 
+.main-nav .hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.main-nav .hamburger h4 {
+  display: inline;
+  color: #005aa5;
+}
+
 .main-nav .logo img {
-  width: 108.88px;
+  width: 15%;
   height: auto;
   position: absolute;
   top: 7.93px;
@@ -57,7 +73,7 @@ header .overlay {
 .nav-list {
   display: inline-block;
   position: absolute;
-  left: 400px;
+  left: 350px;
 }
 
 .nav-list .home:active {
@@ -66,7 +82,7 @@ header .overlay {
 
 .nav-list li {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
 }
 
 .nav-list li a {
@@ -79,38 +95,39 @@ header .overlay {
   border-bottom: solid 2px #005aa5;
 }
 
-.main-nav .buttons {
+.main-nav .nav-buttons {
   display: inline-block;
   position: absolute;
-  left: 800px;
+  left: 750px;
   top: 11px;
 }
 
-.main-nav .buttons span {
-  margin: 0 10px;
+.main-nav .nav-buttons span {
+  margin: 0 8px;
 }
 
-.main-nav .buttons a {
+.main-nav .nav-buttons a {
   text-decoration: none;
   color: #1b1a19;
   font-size: 16px;
 }
 
-.main-nav .buttons .signup {
+.main-nav .nav-buttons .signup {
   background-color: #005aa5;
   border-radius: 3rem;
   padding: 10px 30px;
 }
 
-.main-nav .buttons .signup a {
+.main-nav .nav-buttons .signup a {
   color: #fff;
   text-align: center;
 }
 
 .intro-text {
-  position: absolute;
-  left: 250px;
-  top: 265px;
+  margin-left: 16%;
+  margin-top: 20%;
+  z-index: 1;
+  color: #005aa5;
 }
 
 .intro-text .heading {
@@ -175,6 +192,10 @@ header .overlay {
   align-content: center;
 }
 
+.call img {
+  width: 58px;
+}
+
 .call .line img {
   height: 65px;
 }
@@ -192,7 +213,7 @@ header .overlay {
 
 #services .services-content {
   margin-top: 60px;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 #services .services-content h5 {
@@ -215,7 +236,7 @@ header .overlay {
 
 #services .services-boxes {
   margin-top: 50px;
-  margin-left: 250px;
+  margin-left: 200px;
   display: flex;
   align-items: center;
 }
@@ -256,7 +277,7 @@ header .overlay {
 #rates .rates-content {
   display: flex;
   justify-content: space-between;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 #rates .rates-text {
@@ -314,7 +335,7 @@ header .overlay {
 }
 
 #coming-soon .coming-soon1 {
-  margin-left: 250px;
+  margin-left: 200px;
   width: 400px;
   margin-top: 120px;
 }
@@ -395,7 +416,7 @@ header .overlay {
 }
 
 #Get-touch .get-touchText {
-  margin-left: 250px;
+  margin-left: 200px;
   margin-top: 100px;
 }
 
@@ -550,4 +571,549 @@ footer {
   font-weight: 400;
   background: #fff;
   padding: 10px 0 50px 0;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  header {
+    max-width: 1024px;
+    height: 435px;
+    background-image: url("Pictures/truck1024px.png");
+  }
+
+  .main-nav {
+    width: 85%;
+    max-width: 1024px;
+    margin-left: 60px;
+  }
+
+  .nav-list,
+  .main-nav .nav-buttons {
+    display: none;
+  }
+
+  .main-nav .hamburger {
+    float: right;
+    display: block;
+  }
+
+  .intro-text {
+    margin-top: 90px;
+    margin-left: 100px;
+  }
+
+  .intro-text .heading {
+    font-size: 30px;
+  }
+
+  .intro-text .solutions {
+    width: 350px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .intro-text .solutions br {
+    display: none;
+  }
+
+  .intro-text .search-box input,
+  .intro-text .search-box label {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .intro-text .search-box input {
+    width: 300px;
+    padding-left: 12px;
+  }
+  .intro-text .search-box label {
+    width: 150px;
+  }
+
+  .call {
+    left: 320px;
+    top: 465px;
+    width: 330px;
+    padding: 15px 40px;
+  }
+
+  .call img {
+    width: 48px;
+  }
+
+  .call .line img {
+    height: 55px;
+  }
+
+  .call .tel {
+    color: #005aa5;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #services {
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  #services .services-content {
+    margin: 0 auto;
+  }
+
+  #services .services-boxes {
+    margin: 50px auto;
+    flex-direction: row;
+  }
+
+  #services .services-boxes .box1,
+  #services .services-boxes .box2,
+  #services .services-boxes .box3 {
+    margin: 30px auto;
+    width: 300px;
+    padding: 20px;
+  }
+
+  #rates {
+    margin-left: 0;
+  }
+
+  #rates .rates-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 30px;
+  }
+
+  #rates .rates-images img {
+    margin-right: 0;
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  #coming-soon {
+    padding: 30px 0;
+  }
+
+  #coming-soon .coming-soonBoxes {
+    flex-direction: row;
+  }
+
+  #coming-soon .coming-soon1 {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  #coming-soon .coming-soon2 {
+    margin-left: 50px;
+  }
+
+  #Get-touch {
+    text-align: left;
+  }
+
+  #Get-touch .get-touchContent {
+    flex-direction: row;
+  }
+
+  #Get-touch .get-touchText {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #Get-touch .get-touchText span input {
+    margin-right: 0;
+  }
+
+  #Get-touch .get-touchImg {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  #Get-touch .get-touchImg img {
+    width: 90%;
+  }
+
+  #footer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #footer .logo {
+    margin-left: 30px;
+    width: 220px;
+  }
+
+  #footer .logo .socicons {
+    margin-top: 30px;
+  }
+
+  #footer .company,
+  #footer .quick-link,
+  #footer .contact {
+    margin-top: 10px;
+  }
+
+  #footer .company {
+    margin-left: 90px;
+    width: 100px;
+  }
+
+  #footer .quick-link {
+    margin-left: 70px;
+    width: 150px;
+  }
+
+  #footer .contact {
+    margin-left: 50px;
+    width: 100px;
+  }
+}
+/*END OF 1024px*/
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+
+  header {
+    max-width: 768px;
+    background-image: url("Pictures/truck768px.png");
+  }
+
+  .main-nav {
+    margin-top: 0;
+  }
+
+  .intro-text {
+    margin-top: 65px;
+  }
+
+  .intro-text .solutions br {
+    display: none;
+  }
+
+  .intro-text .solutions {
+    width: 300px;
+  }
+
+  .call {
+    left: 240px;
+    top: 430px;
+  }
+
+  #services .services-boxes {
+    margin: 50px auto;
+    flex-direction: column;
+  }
+
+  #services .services-boxes .box1,
+  #services .services-boxes .box2,
+  #services .services-boxes .box3 {
+    margin: 30px auto;
+    width: 400px;
+    padding: 50px;
+  }
+
+  #rates .rates-content {
+    text-align: center;
+  }
+
+  #rates .rates-content {
+    flex-direction: column;
+  }
+
+  #rates .rates-content .rates-text {
+    margin-top: 20px;
+  }
+
+  #rates .rates-content .rates-text button {
+    margin: 20px auto;
+  }
+
+  #rates .rates-images img {
+    margin-top: 50px;
+  }
+
+  #coming-soon .coming-soonBoxes {
+    flex-direction: column;
+  }
+
+  #coming-soon .coming-soon1 {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #coming-soon .coming-soon2 {
+    margin-left: 50px;
+  }
+
+  #Get-touch .get-touchContent {
+    flex-direction: column;
+  }
+
+  #Get-touch .get-touchText {
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+
+  #Get-touch .get-touchImg {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  #footer .company {
+    margin-left: 50px;
+    width: 100px;
+  }
+
+  #footer .quick-link {
+    margin-left: 30px;
+    width: 150px;
+  }
+
+  #footer .contact {
+    margin-left: 10px;
+    width: 100px;
+  }
+}
+
+/*END OF 768px*/
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+
+  .wrapper {
+    max-width: 375px;
+  }
+
+  header {
+    max-width: 375px;
+    background-image: url("Pictures/truck375px.png");
+    height: 370px;
+  }
+
+  .main-nav {
+    max-width: 375px;
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+
+  .main-nav .hamburger {
+    display: block;
+    color: #005aa5;
+  }
+
+  .main-nav .logo img {
+    width: 25%;
+  }
+
+  .intro-text {
+    margin-top: 45px;
+    margin-left: 55px;
+  }
+
+  .intro-text .heading {
+    font-size: 16px;
+  }
+
+  .intro-text .solutions {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 17px;
+    line-height: 1.5em;
+    width: 200px;
+    color: #fff;
+  }
+
+  .intro-text .search-box {
+    margin-top: 20px;
+  }
+
+  .intro-text .search-box input {
+    width: 170px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: block;
+  }
+  .intro-text .search-box label {
+    width: 50px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 1rem;
+  }
+
+  .call {
+    justify-content: space-around;
+    top: 400px;
+    left: 60px;
+    width: 250px;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .call span img {
+    width: 150%;
+  }
+
+  .call .line img {
+    height: 45px;
+    margin-left: 3px;
+  }
+
+  .call p {
+    font-size: 12px;
+  }
+
+  .call .tel {
+    font-size: 14px;
+  }
+
+  #services {
+    width: 350px;
+  }
+
+  #services .services-boxes {
+    margin: 30px auto;
+  }
+
+  #services .services-boxes .box1,
+  #services .services-boxes .box2,
+  #services .services-boxes .box3 {
+    margin: 30px auto;
+    width: 275px;
+    padding: 20px;
+  }
+
+  #rates {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  #rates .rates-text input {
+    padding-left: 15px;
+    width: 250px;
+  }
+
+  #coming-soon {
+    padding: 20px 0;
+    width: 350px;
+  }
+
+  #coming-soon .coming-soon1 {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  #coming-soon .coming-soon1 h1 br {
+    display: none;
+  }
+
+  #coming-soon .coming-soon2 {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  #coming-soon .coming-soon2 img {
+    width: 300px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #coming-soon .coming-soon2 span h5 {
+    display: inline;
+  }
+
+  #coming-soon .coming-soon2 span img {
+    width: 10px;
+  }
+
+  #coming-soon .coming-soon2 input {
+    width: 300px;
+  }
+
+  #Get-touch .get-touchText {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #Get-touch .get-touchText span label {
+    display: none;
+  }
+
+  #Get-touch .get-touchText span input {
+    margin-bottom: 30px;
+    width: 250px;
+  }
+
+  #Get-touch .message {
+    margin-top: -5px;
+    width: 350px;
+  }
+
+  #Get-touch .message textarea {
+    width: 250px;
+  }
+
+  #Get-touch .get-touchImg {
+    margin-left: 30px;
+  }
+
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer .logo {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  #footer .company {
+    margin: 40px auto 20px auto;
+    width: 350px;
+  }
+
+  #footer .company ul li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  #footer .quick-link {
+    margin: 20px auto 20px auto;
+    width: 350px;
+  }
+
+  #footer .quick-link ul li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  #footer .contact {
+    margin: 20px auto 20px auto;
+    width: 350px;
+  }
+
+  #footer .contact ul li {
+    display: block;
+    margin: 0 5px;
+  }
+
+  #footer .quick-link ul li {
+    display: inline-block;
+  }
+
+  #footer .contact ul li {
+    display: inline-block;
+  }
 }
