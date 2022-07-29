@@ -15,12 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b41a766c11.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home | Triune Circle</title>
   </head>
   <body>
     <div class="wrapper">
       <header id="header">
-        <div class="overlay">overlay</div>
         <br />
         <nav class="main-nav">
           <div class="logo">
@@ -28,14 +31,17 @@
               ><img src="Logos/logo with text.svg" alt="Triune Circle Logo"
             /></a>
           </div>
-
-          <ul class="nav-list">
+          <span id="hamburger-icon" class="hamburger" onclick="menuDisplay()">
+            <i class="fa-solid fa-bars"></i
+          ></span>
+          <ul class="nav-list" id="navList">
             <li class="home"><a href="index.html">Home</a></li>
             <li><a href="">Tracking</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Contact</a></li>
           </ul>
-          <div class="buttons">
+
+          <div class="nav-buttons" id="navButtons">
             <span><a href="login.html">Login</a></span>
             <span class="signup"><a href="signup.html">Sign Up</a></span>
           </div>
@@ -57,7 +63,7 @@
           </p>
           <div class="search-box">
             <input
-              type="text"
+              type="search"
               name="search"
               placeholder="Enter your tracking number"
             />
@@ -67,12 +73,7 @@
       </header>
 
       <div class="call">
-        <span>
-          <img
-            src="Iconly/call icon complete.svg"
-            width="
-          58px"
-        /></span>
+        <span> <img src="Iconly/call icon complete.svg" /></span>
         <span class="line"><img src="Iconly/Line 3.svg" /></span>
         <span>
           <p>Need help? Call us on</p>
@@ -81,6 +82,7 @@
       </div>
 
       <section id="services">
+        <br />
         <div class="services-content">
           <h5>Why We Are The Best</h5>
           <h1>
@@ -213,7 +215,7 @@
 
             <div class="input-field">
               <span>
-                <label for="email">Email Address</label>
+                <label for="email">Email Address </label>
                 <label for="subject">Subject</label>
               </span>
               <br />
@@ -244,6 +246,7 @@
             </div>
             <button><a href="">Send Message</a></button>
           </div>
+
           <div class="get-touchImg">
             <img src="Pictures/coverr.png" alt="" />
           </div>
@@ -257,7 +260,7 @@
           /></a>
           <p>
             Triune Circle Logistics is a full-service logistics services
-            provider based in Lagos. We work with clients across NIgeria to
+            provider based in Lagos. We work with clients across Nigeria to
             support their international logistics needs.
           </p>
           <ul class="socicons">
