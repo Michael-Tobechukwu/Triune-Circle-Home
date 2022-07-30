@@ -10,6 +10,7 @@
     "
     />
     <link rel="shortcut icon" href="Logos/logo.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="index styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&display=swap"
@@ -25,6 +26,12 @@
     <div class="wrapper">
       <header id="header">
         <br />
+        <img
+          src="Pictures/truck1440px.png"
+          alt="truck image"
+          class="header-img"
+        />
+
         <nav class="main-nav">
           <div class="logo">
             <a href="index.html"
@@ -34,12 +41,15 @@
           <span id="hamburger-icon" class="hamburger" onclick="menuDisplay()">
             <i class="fa-solid fa-bars"></i
           ></span>
-          <ul class="nav-list" id="navList">
-            <li class="home"><a href="index.html">Home</a></li>
-            <li><a href="">Tracking</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+
+          <div class="nav-list" id="navList">
+            <ul>
+              <li class="home"><a href="index.html">Home</a></li>
+              <li><a href="">Tracking</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
 
           <div class="nav-buttons" id="navButtons">
             <span><a href="login.html">Login</a></span>
@@ -313,6 +323,5 @@
       </section>
       <footer>&copy; Triune Circle Logistics, 2022</footer>
     </div>
-    <!--wrapper ends here!-->
   </body>
 </html>
