@@ -92,6 +92,11 @@ header .header-img {
   background-color: #005aa5;
   border-radius: 3rem;
   padding: 10px 30px;
+  transition: ease 0.5s;
+}
+
+.main-nav .nav-buttons .signup:hover {
+  background-color: #033156;
 }
 
 .main-nav .nav-buttons .signup a {
