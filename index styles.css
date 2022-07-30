@@ -564,19 +564,24 @@ footer {
 
 @media (max-width: 1024px) {
   .wrapper {
+    width: 100%;
     max-width: 1024px;
   }
 
   header {
     max-width: 1024px;
-    height: 435px;
-    background-image: url("Pictures/truck1024px.png");
+    height: 500px;
+  }
+
+  header .header-img img {
+    width: 100%;
   }
 
   .main-nav {
-    width: 85%;
-    max-width: 1024px;
-    margin-left: 60px;
+    width: 95%;
+    justify-content: flex-start;
+    margin-left: 100px;
+    gap: 700px;
   }
 
   .nav-list,
@@ -585,12 +590,11 @@ footer {
   }
 
   .main-nav .hamburger {
-    float: right;
     display: block;
   }
 
   .intro-text {
-    margin-top: 90px;
+    margin-top: 100px;
     margin-left: 100px;
   }
 
