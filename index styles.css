@@ -10,6 +10,7 @@ body {
 }
 
 .wrapper {
+  width: 98%;
   max-width: 1440px;
   margin: 0 auto;
   background: #f7f8fa;
@@ -18,38 +19,27 @@ body {
 header {
   position: relative;
   max-width: 1440px;
-  background-image: url("Pictures/truck1440px.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 837px;
+  width: 100%;
   margin: 0 auto;
-  opacity: 0.8;
-  z-index: 0;
+  height: 670px;
 }
 
-header .overlay {
+header .header-img {
   position: absolute;
-  height: 785px;
-  width: 1440px;
-  background-color: #005eac;
-  opacity: 0.27;
-  mix-blend-mode: color;
-  z-index: -1;
-}
-
-header .overlay img {
-  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .main-nav {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
   font-weight: 600;
-  margin: 20px auto;
-  max-width: 1024px;
-}
-
-.main-nav .logo {
-  display: inline;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
 }
 
 .main-nav .hamburger {
@@ -58,22 +48,11 @@ header .overlay img {
 }
 
 .main-nav .hamburger h4 {
-  display: inline;
   color: #005aa5;
-}
-
-.main-nav .logo img {
-  width: 15%;
-  height: auto;
-  position: absolute;
-  top: 7.93px;
-  left: 37.12px;
 }
 
 .nav-list {
   display: inline-block;
-  position: absolute;
-  left: 350px;
 }
 
 .nav-list .home:active {
@@ -97,9 +76,6 @@ header .overlay img {
 
 .main-nav .nav-buttons {
   display: inline-block;
-  position: absolute;
-  left: 750px;
-  top: 11px;
 }
 
 .main-nav .nav-buttons span {
@@ -124,10 +100,11 @@ header .overlay img {
 }
 
 .intro-text {
-  margin-left: 16%;
-  margin-top: 20%;
-  z-index: 1;
+  margin-left: 200px;
+  margin-top: 130px;
   color: #005aa5;
+  position: absolute;
+  z-index: 1;
 }
 
 .intro-text .heading {
@@ -209,10 +186,11 @@ header .overlay img {
 #services {
   background: #f7f8fa;
   margin-bottom: 80px;
+  margin-top: 200px;
 }
 
 #services .services-content {
-  margin-top: 60px;
+  margin-top: 0;
   margin-left: 200px;
 }
 
