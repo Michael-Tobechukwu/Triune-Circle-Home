@@ -88,6 +88,10 @@ header .header-img {
   font-size: 16px;
 }
 
+.main-nav .nav-buttons .login:hover {
+  border-bottom: solid 2px #005aa5;
+}
+
 .main-nav .nav-buttons .signup {
   background-color: #005aa5;
   border-radius: 3rem;
