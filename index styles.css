@@ -774,11 +774,11 @@ footer {
 
   header {
     max-width: 768px;
-    background-image: url("Pictures/truck768px.png");
   }
 
   .main-nav {
     margin-top: 0;
+    gap: 300px;
   }
 
   .intro-text {
@@ -877,9 +877,262 @@ footer {
 
 /*END OF 768px*/
 
+@media (max-width: 568px) {
+  body {
+    max-width: 568px;
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 568px;
+    width: 100%;
+  }
+
+  header {
+    max-width: 568px;
+    height: 330px;
+    width: 100%;
+  }
+
+  .main-nav {
+    max-width: 568px;
+    justify-content: space-around;
+    gap: 200px;
+    margin-left: 10px;
+  }
+
+  .main-nav .hamburger {
+    display: block;
+    color: #005aa5;
+  }
+
+  .main-nav .logo img {
+    width: 90%;
+  }
+
+  .intro-text {
+    margin-top: 60px;
+    margin-left: 55px;
+  }
+
+  .intro-text .heading {
+    font-size: 18px;
+  }
+
+  .intro-text .solutions {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 7px;
+    line-height: 1.5em;
+    width: 250px;
+  }
+
+  .intro-text .search-box {
+    margin-top: 5px;
+  }
+
+  .intro-text .search-box input {
+    width: 170px;
+    height: 35px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .intro-text .search-box label {
+    width: 50px;
+    font-size: 12px;
+    padding: 7px 8px 7px 6px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-left: 1px;
+  }
+
+  .intro-text .search-box label:hover {
+    cursor: pointer;
+  }
+
+  .call {
+    justify-content: space-around;
+    align-items: center;
+    top: 350px;
+    left: 150px;
+    width: 250px;
+    padding: 10px 20px;
+  }
+
+  .call span img {
+    width: 150%;
+  }
+
+  .call .line img {
+    height: 45px;
+    margin-left: 3px;
+  }
+
+  .call p {
+    font-size: 12px;
+  }
+
+  .call .tel {
+    font-size: 14px;
+  }
+
+  #services {
+    width: 95%;
+    max-width: 568px;
+    margin-top: 150px;
+  }
+
+  #services .services-boxes {
+    margin: 20px auto;
+  }
+
+  #services .services-boxes .box1,
+  #services .services-boxes .box2,
+  #services .services-boxes .box3 {
+    margin: 30px auto;
+    width: 275px;
+    padding: 20px;
+  }
+
+  #rates {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 568px;
+  }
+
+  #rates .rates-text input {
+    padding-left: 15px;
+    width: 250px;
+  }
+
+  #coming-soon {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 568px;
+  }
+
+  #coming-soon .coming-soon1 {
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  #coming-soon .coming-soon1 h1 br {
+    display: none;
+  }
+
+  #coming-soon .coming-soon2 {
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  #coming-soon .coming-soon2 img {
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #coming-soon .coming-soon2 span h5 {
+    display: inline;
+  }
+
+  #coming-soon .coming-soon2 span img {
+    width: 10px;
+  }
+
+  #coming-soon .coming-soon2 input {
+    width: 400px;
+  }
+
+  #Get-touch .get-touchText {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #Get-touch .get-touchText span label {
+    display: none;
+  }
+
+  #Get-touch .get-touchText span input {
+    margin-bottom: 30px;
+    width: 250px;
+  }
+
+  #Get-touch .message {
+    margin-top: -5px;
+    width: 350px;
+  }
+
+  #Get-touch .message textarea {
+    width: 250px;
+  }
+
+  #Get-touch .get-touchImg {
+    margin-left: 30px;
+  }
+
+  #footer {
+    width: 100%;
+    max-width: 568px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #footer .logo {
+    width: 95%;
+    margin-left: 30px;
+  }
+
+  #footer .company {
+    margin: 40px auto 20px 30px;
+    width: 95%;
+  }
+
+  #footer .company ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  #footer .quick-link {
+    margin: 5px auto 20px 30px;
+    width: 95%;
+  }
+
+  #footer .quick-link ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  #footer .contact {
+    margin: 5px auto 10px 30px;
+    width: 95%;
+  }
+
+  #footer .contact ul li {
+    display: block;
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  #footer .quick-link ul li {
+    display: inline-block;
+  }
+
+  #footer .contact ul li {
+    display: inline-block;
+  }
+
+  #footer footer {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 375px) {
   body {
     max-width: 375px;
+    margin: 0;
   }
 
   .wrapper {
@@ -888,8 +1141,6 @@ footer {
 
   header {
     max-width: 375px;
-    background-image: url("Pictures/truck375px.png");
-    height: 370px;
   }
 
   .main-nav {
